@@ -1,0 +1,10 @@
+UPDATE PCEST                        
+   SET MODULO = 1             
+     , NUMERO = 1             
+     , RUA = 1                   
+     , APTO = 1                        
+ WHERE MODULO IS NULL
+ AND NUMERO IS NULL
+ AND RUA IS NULL
+ AND APTO IS NULL      
+   AND CODFILIAL in (x,y,z)
